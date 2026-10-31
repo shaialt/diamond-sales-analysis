@@ -6,7 +6,7 @@ The project combines data preprocessing, exploratory data analysis, subgroup com
 
 ## Project Overview
 
-The analysis was conducted on a diamond sales dataset covering the period from 2022 to 2024. After cleaning and validation, the final dataset contained **4,499 records and 19 variables** describing diamond characteristics, prices, appraisal values, discounts, sales channels, certifications, customer satisfaction, and sales performance.
+The analysis was conducted on a diamond sales dataset covering the period from 2022 to 2024. After cleaning and validation, the final dataset contained **4,498 records and 19 variables** describing diamond characteristics, prices, appraisal values, discounts, sales channels, certifications, customer satisfaction, and sales performance.
 
 The project was designed to answer the following questions:
 
@@ -39,17 +39,17 @@ The preprocessing stage included:
 
 - Inspecting column types, missing values, unique values, and distributions
 - Converting incorrectly formatted numerical fields
-- Processing inconsistent date formats
+- Processing inconsistent date formats (day-first parsing for DD/MM/YYYY values)
 - Standardizing categorical values and certification names
 - Detecting invalid and unrealistic observations
 - Correcting the discount-percentage calculation
 - Handling missing numerical and categorical values
-- Investigating duplicate records and identifiers
+- Investigating duplicate records and identifiers (including DIA62001, a duplicate caused by two date formats)
 - Removing two confirmed erroneous Carat observations
 - Preserving legitimate high-value business outliers
 - Performing final validation and exporting the cleaned dataset
 
-The final cleaned dataset contained **4,499 rows**, with no missing values or fully duplicated records.
+The final cleaned dataset contained **4,498 rows**, with no missing values or fully duplicated records.
 
 ### 2. Exploratory Data Analysis
 
@@ -95,15 +95,15 @@ Because diamond prices were strongly right-skewed, a second model was trained us
 
 | Metric | Baseline Model | Final Log-Transformed Model |
 |---|---:|---:|
-| Test R² | 0.9259 | **0.9507** |
-| MAE | $721.00 | **$458.54** |
-| RMSE | $1,066.45 | **$869.88** |
-| MAPE | 37.88% | **10.90%** |
-| Median APE | 19.67% | **9.27%** |
-| WAPE | 18.06% | **11.49%** |
-| Negative predictions | 64 | **0** |
+| Test R² | 0.9253 | **0.9605** |
+| MAE | $743.78 | **$434.22** |
+| RMSE | $1,106.92 | **$804.81** |
+| MAPE | 41.98% | **10.70%** |
+| Median APE | 20.01% | **9.32%** |
+| WAPE | 18.92% | **11.05%** |
+| Negative predictions | 76 | **0** |
 
-Five-fold cross-validation produced a mean R² of **0.9505** with a standard deviation of **0.0039** for the final model, indicating stable performance across different data partitions.
+Five-fold cross-validation produced a mean R² of **0.9505** with a standard deviation of **0.0040** for the final model, indicating stable performance across different data partitions.
 
 Permutation importance identified Carat weight as the most influential predictor, followed by physical dimensions and several Clarity categories.
 
@@ -129,7 +129,7 @@ The results indicate a moderate and interpretable clustering structure. These se
 - Selling price and appraisal value had a correlation of approximately **0.997**.
 - Approximately **91%** of diamonds were sold below their appraised value.
 - Raw quality-group comparisons were strongly affected by differences in Carat weight.
-- Annual sales volume increased from **1,228 diamonds in 2022** to **1,693 in 2024**.
+- Annual sales volume increased from **1,228 diamonds in 2022** to **1,692 in 2024**.
 - Total sales value increased from approximately **$5.02 million** to **$6.82 million**.
 - The log-transformed regression model substantially improved prediction accuracy.
 - K-Means identified three useful broad market segments, although some overlap remained between neighboring clusters.
