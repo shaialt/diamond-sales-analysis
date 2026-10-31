@@ -1,0 +1,5 @@
+channel_name,channel_type,diamonds_sold,share_of_sales_pct,avg_price_usd,avg_discount_pct,avg_satisfaction,avg_days_on_market
+Boutique,Physical,1153,25.63,6478.11,6.79,8.28,48.5
+Showroom,Physical,1538,34.19,4096.06,7.18,7.89,26.3
+Online,Digital,1123,24.97,2819.23,7.08,8.05,24.9
+Wholesale,Trade,684,15.21,1276.22,7.19,7.8,23.3

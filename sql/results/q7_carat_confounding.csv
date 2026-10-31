@@ -1,0 +1,7 @@
+carat_group,premium_count,standard_count,premium_avg_carat,standard_avg_carat,premium_avg_price,standard_avg_price,premium_minus_standard
+0. All diamonds,2993,1505,0.77,0.86,3875.9,4124.49,-248.59
+1. 0-0.5 ct,1147,417,0.35,0.36,858.76,790.6,68.17
+2. 0.5-1 ct,873,576,0.69,0.78,2653.51,3030.31,-376.8
+3. 1-1.5 ct,675,345,1.14,1.15,6652.72,6341.86,310.87
+4. 1.5-2 ct,203,114,1.63,1.64,11635.84,10421.8,1214.04
+5. 2+ ct,95,53,2.15,2.13,15225.14,14267.92,957.21

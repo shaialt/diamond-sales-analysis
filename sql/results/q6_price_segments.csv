@@ -1,0 +1,5 @@
+price_segment,diamonds_sold,share_of_sales_pct,revenue_usd,share_of_revenue_pct,avg_carat
+1. Entry (< $2K),2020,44.91,2025743,11.38,0.4
+2. Mid ($2K-$5K),1239,27.55,4271130,23.98,0.86
+3. High ($5K-$10K),806,17.92,5617628,31.55,1.22
+4. Luxury ($10K+),433,9.63,5893425,33.09,1.73

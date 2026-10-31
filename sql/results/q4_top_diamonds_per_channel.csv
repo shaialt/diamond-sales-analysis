@@ -1,0 +1,13 @@
+channel_name,diamond_id,carat,cut,color,clarity,price_usd,price_rank
+Boutique,DIA61016,2.15,Ideal,G,SI2,18791,1
+Boutique,DIA61156,2.01,Good,H,VS2,18640,2
+Boutique,DIA64316,2.01,Good,G,SI1,18572,3
+Online,DIA63704,2.0,Very Good,H,SI1,18803,1
+Online,DIA60865,1.6,Ideal,F,VS1,18571,2
+Online,DIA62675,1.51,Premium,F,IF,18102,3
+Showroom,DIA61356,1.6,Ideal,F,VS1,18780,1
+Showroom,DIA61780,2.01,Ideal,G,SI1,18741,2
+Showroom,DIA64330,2.0,Premium,F,SI1,18493,3
+Wholesale,DIA63120,1.1,Very Good,G,SI1,4997,1
+Wholesale,DIA63363,1.0,Very Good,H,VS2,4978,2
+Wholesale,DIA60285,1.28,Very Good,J,SI1,4967,3
