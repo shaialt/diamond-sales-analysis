@@ -193,7 +193,19 @@ The presentation includes a Tableau appendix covering:
 - Certification distribution
 - Sales-channel distribution
 
-**Tableau Public:** [View the interactive visualizations](https://public.tableau.com/app/profile/shai.levi.altshtein/vizzes)
+The charts below were captured from the Tableau workbook (`Diamonds.twb`) using the final cleaned dataset (4,498 records):
+
+![Diamond Color Distribution](tableau/color_distribution.png)
+
+![Diamond Clarity Distribution](tableau/clarity_distribution.png)
+
+![Diamond Price vs Carat](tableau/price_vs_carat.png)
+
+![Diamond Certification Distribution](tableau/certification_distribution.png)
+
+![Diamond Sales Channel Distribution](tableau/sales_channel_distribution.png)
+
+**Tableau Public:** [View the interactive visualizations](https://public.tableau.com/app/profile/shai.levi.altshtein/vizzes) (published before the final date-format correction, based on 4,499 records)
 
 ## Limitations
 
